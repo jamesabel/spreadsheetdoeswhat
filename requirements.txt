@@ -2,3 +2,4 @@ ismain
 openpyxl
 xlrd
 tobool
+pandas

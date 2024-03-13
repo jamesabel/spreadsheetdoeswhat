@@ -8,8 +8,10 @@ a = ws.cell(1, 0).value
 b = ws.cell(2, 0).value
 a_bool = bool(a)
 b_bool = bool(b)
-print(a, type(a), a_bool)
-print(b, type(b), b_bool)
+print("xlrd")
+print("a", a, type(a), a_bool)
+print("b", b, type(b), b_bool)
+print()
 
 wb = load_workbook('o_no.xlsx', data_only=True)
 ws = wb.active
@@ -17,8 +19,9 @@ a = ws["A2"].value
 b = ws["A3"].value
 a_bool = bool(a)
 b_bool = bool(b)
-print(a, type(a), a_bool)
-print(b, type(b), b_bool)
+print("openpyxl")
+print("a", a, type(a), a_bool)
+print("b", b, type(b), b_bool)
 print()
 
 print("Not spreadsheet per se, but what Python does")
